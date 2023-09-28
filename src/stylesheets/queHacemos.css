@@ -1,0 +1,46 @@
+/* .box {
+    text-align: center;
+    width: calc(50% - 20px);
+    margin: 10px;
+    position: relative;
+}
+
+.icon-tooltip {
+    display: none;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 10px 0 0;
+    padding-top: 10px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+    transform-origin: center top;
+    z-index: 1;
+}
+
+.icons:hover .icon-tooltip {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px) scale(1);
+}
+
+.icon-tooltip ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.icon-tooltip ul li::before {
+    content: '✓';
+    color: #008000;
+    margin-right: 10px;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+} */

@@ -1,0 +1,52 @@
+.title {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.title h2 {
+    font-size: 2.5rem;
+    color: #1e3b73;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #1e3b73;
+}
+
+.entidades-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.entidad-img {
+    max-width: 12%;
+    margin: 1rem;
+}
+
+@media (max-width: 768px) {
+    .entidad-img {
+        max-width: 40%;
+    }
+    .title h2 {
+        margin-right: 7%;
+    }
+    .title {
+        width: 80%;
+    }
+}

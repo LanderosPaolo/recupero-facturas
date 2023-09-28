@@ -1,0 +1,146 @@
+.do-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrap h2 {
+    font-size: 2.5rem;
+    /* color: #000; */
+    color: #1e3b73;
+    /* color: #fff; */
+}
+
+.h2-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.h2-container h2 {
+    font-size: 2.5rem;
+    color: #1e3b73;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.h2-container::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #1e3b73;
+}
+
+.tarjeta-wrap {
+    margin: 10px;
+    perspective: 800px;
+    width: 300px;
+    height: 350px;
+    /* background-color: #e5e5e5; */
+    background-color: rgba(30, 59, 115, 0.4);
+    border-radius: 5%;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    /* animation: autoRotate 5s linear infinite; */
+}
+
+.tarjeta {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+    color: #000;
+    color: #1e3b73;
+}
+
+.tarjeta i {
+    font-size: 2rem;
+    color: #eb3c46;
+    margin-bottom: 10%;
+}
+
+.delantera,
+.trasera {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.delantera {
+    transform: rotateY(0deg);
+    transition: opacity 1s ease;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.trasera {
+    transform: rotateY(180deg);
+    transition: opacity 1s ease;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.tarjeta-wrap:hover .tarjeta {
+    transform: rotateY(180deg);
+}
+
+.tarjeta-wrap:hover .tarjeta .delantera {
+    opacity: 0;
+}
+
+.tarjeta-wrap:hover .tarjeta .trasera {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .do-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h2-container h2 {
+        margin-right: 7%;
+    }
+
+    .h2-container {
+        width: 80%;
+    }
+}
+
+.tarjeta ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+}
+
+.tarjeta ul li::before {
+    content: '✓';
+    color: #eb3c46;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.icono-repeticion {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.1rem !important;
+    color: #000 !important;
+}
