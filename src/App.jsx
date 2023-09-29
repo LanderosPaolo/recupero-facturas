@@ -1,6 +1,6 @@
 import BarraNavegacion from "./components/navbar"
-// import QueHacemos from "./components/queHacemos"
-import Do from "./components/do"
+import QueHacemos from "./components/queHacemos"
+// import Do from "./components/do"
 // import Banner from "./components/banner"
 import Banner2 from "./components/banner2"
 import ContactForm from "./components/contact"
@@ -15,8 +15,8 @@ function App() {
       {/* <Banner /> */}
       <Banner2 />
       <QuienesSomos />
-      {/* <QueHacemos /> */}
-      <Do />
+      <QueHacemos />
+      {/* <Do /> */}
       <Entidades />
       <ContactForm />
       <Footer />

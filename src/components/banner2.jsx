@@ -36,9 +36,9 @@ const Banner2 = () => {
     return (
         <div className="banner d-flex align-items-center">
             <div className="container text-center">
-                <h1 className='mb-5'>Tu flujo de caja, nuestra meta!</h1>
+                <h1 className='mb-5'>Tu flujo de caja, nuestra meta.</h1>
                 <button className="btn btn-primary contact-button mt-5" onClick={scrollToContact}>
-                    Contáctanos
+                    ¡Contáctanos!
                 </button>
             </div>
             <div className="items-container">

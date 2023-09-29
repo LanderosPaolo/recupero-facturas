@@ -1,7 +1,7 @@
 .nav-link:hover {
     font-weight: bold;
     background-color: #fb3c3c;
-    /* color: white; */
+    border-radius: 5px;
 }
 
 .navbar {
@@ -15,7 +15,7 @@
 .logo-pequeno {
     max-width: 3rem;
     height: auto;
-    /* background-color: #fff; */
+    cursor: pointer;
 }
 
 .logo-text-container {
@@ -24,9 +24,8 @@
 }
 
 .logo-text {
-    margin-top: 12px;
+    margin-top: 15px;
     margin-left: 10px;
-    /* color: #1e3b73; */
     color: #fff;
 }
 
@@ -39,7 +38,6 @@ a {
 }
 
 .navbar-toggler {
-    /* background-color: #eb3c46; */
     background-color: #fff;
 }
 
