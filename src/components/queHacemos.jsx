@@ -13,7 +13,7 @@ const QueHacemos = () => {
                         <div className="delantera">
                             <h3 className='mb-4'>Cobranza <b>Administrativa:</b></h3>
                             <ul>
-                                <li><b>Contacto con cliente</b> para revisíon de documentos y situación para su devengo.</li>
+                                <li><b>Contacto con cliente</b> para revisión de documentos y situación para su devengo.</li>
                                 <li><b>Envío de correos</b> con información requerida para el devengo del documento.</li>
                                 <li><b>Solicitud comprobantes</b> de pagos de los documentos.</li>
                             </ul>
