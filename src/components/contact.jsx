@@ -114,7 +114,7 @@ const ContactForm = () => {
                 <form onSubmit={handleFormSubmit} action="https://formsubmit.co/af822a3c559564ee8fcc23aec60fc116" method="POST">
                     <div className="form-group">
                         <label htmlFor="name" className="form-label">Nombre</label>
-                        <input type="text" className="form-control" id="name" name="name" placeholder="Nombre y Apellido" />
+                        <input type="text" className="form-control" id="name" name="nombre" placeholder="Nombre y Apellido" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="company" className="form-label">Empresa</label>
