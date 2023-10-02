@@ -59,7 +59,6 @@ const ContactForm = () => {
         const email = event.target.email.value;
         const company = event.target.company.value;
         const rut = event.target.rut.value;
-        const message = event.target.message.value;
 
         if (!name || !email || !company || !rut) {
             toast.error('¡Por favor, completa todos los campos!', {
@@ -114,11 +113,11 @@ const ContactForm = () => {
                 <form onSubmit={handleFormSubmit} action="https://formsubmit.co/af822a3c559564ee8fcc23aec60fc116" method="POST">
                     <div className="form-group">
                         <label htmlFor="name" className="form-label">Nombre</label>
-                        <input type="text" className="form-control" id="name" name="nombre" placeholder="Nombre y Apellido" />
+                        <input type="text" className="form-control" id="name" name="Nombre" placeholder="Nombre y Apellido" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="company" className="form-label">Empresa</label>
-                        <input type="text" className="form-control" id="company" name="company" placeholder="Nombre de la empresa" />
+                        <input type="text" className="form-control" id="company" name="Empresa" placeholder="Nombre de la empresa" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="rut" className="form-label">Rut</label>
@@ -129,15 +128,15 @@ const ContactForm = () => {
                     </div>
                     <div className="form-group">
                         <label htmlFor="email" className="form-label">Correo electrónico</label>
-                        <input type="email" className="form-control" id="email" name="email" placeholder="Email" />
+                        <input type="email" className="form-control" id="email" name="Email" placeholder="Email" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="tel" className="form-label">Número de contacto (Opcional)</label>
-                        <input type="tel" className="form-control" id="tel" name="tel" placeholder="(Código de área) Número" />
+                        <input type="tel" className="form-control" id="tel" name="Telefono" placeholder="(Código de área) Número" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="message" className="form-label">Mensaje (Opcional)</label>
-                        <textarea className="form-control" id="message" name="message" rows="4" placeholder="Mensaje"></textarea>
+                        <textarea className="form-control" id="message" name="Mensaje" rows="4" placeholder="Mensaje"></textarea>
                     </div>
                     <div className='d-flex justify-content-center'>
                         <button type="submit" className="custom-button btn-primary my-3" disabled={isSubmitting}>
