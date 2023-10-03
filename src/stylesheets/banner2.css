@@ -9,6 +9,7 @@
 }
 
 h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 60px;
     color: #fff;
     text-shadow: 2px 4px 6px #1e3b73;
@@ -65,19 +66,27 @@ h1 {
 
 .items {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     text-align: center;
 }
 
 .item {
+    margin-top: 15px;
+}
+
+.item p {
+    font-size: 20px;
+}
+
+/* .item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     color: white;
-    font-size: 1rem;
     flex: 1;
-    text-align: center;
-}
+} */
 
 .item i, .item p {
     transition: text-shadow 0.3s ease, filter 0.3s ease;
@@ -86,5 +95,4 @@ h1 {
 .item.highlighted i, .item.highlighted p {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     filter: brightness(2);
-    font-weight: bold;
 }
