@@ -76,17 +76,8 @@ h1 {
 }
 
 .item p {
-    font-size: 20px;
+    font-size: 25px;
 }
-
-/* .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    flex: 1;
-} */
 
 .item i, .item p {
     transition: text-shadow 0.3s ease, filter 0.3s ease;
@@ -95,4 +86,11 @@ h1 {
 .item.highlighted i, .item.highlighted p {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     filter: brightness(2);
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .item p {
+        font-size: 15px;
+    }
 }
