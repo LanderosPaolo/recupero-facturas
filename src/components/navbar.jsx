@@ -1,6 +1,6 @@
 import '../stylesheets/nav.css';
 // import logoPequeno from '../imgs/logoPequeño.png';
-import logoPequeno from 'src/imgs/logoPequeno.png';
+import logoPequeno from '../imgs/logoPequeno.png';
 
 const BarraNavegacion = () => {
     const scrollToSection = (sectionId) => {
