@@ -110,7 +110,7 @@ const ContactForm = () => {
         <>
             <div className="container forms my-5" id='contact'>
                 <h2>Contáctanos</h2>
-                <form onSubmit={handleFormSubmit} action="https://formsubmit.co/contacto@recuperofacturas.cl" method="POST">
+                <form onSubmit={handleFormSubmit} action="https://formsubmit.co/aeef2c76abe4669f65adf6455932f2f1" method="POST">
                     <div className="form-group">
                         <label htmlFor="name" className="form-label">Nombre</label>
                         <input type="text" className="form-control" id="name" name="Nombre" placeholder="Nombre y Apellido" />
