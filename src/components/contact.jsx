@@ -110,7 +110,7 @@ const ContactForm = () => {
         <>
             <div className="container forms my-5" id='contact'>
                 <h2>Contáctanos</h2>
-                <form onSubmit={handleFormSubmit} action="https://formsubmit.co/landerospaolo@gmail.com" method="POST">
+                <form onSubmit={handleFormSubmit} action="https://formsubmit.co/contacto@recuperofacturas.cl" method="POST">
                     {/* Nueva plantilla para el correo */}
                     <input type="hidden" name="_template" value="table" />
                     {/* Fin nueva plantilla para el correo */}
