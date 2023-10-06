@@ -142,13 +142,13 @@ const ContactForm = () => {
                         <textarea className="form-control" id="message" name="Mensaje" rows="4" placeholder="Mensaje"></textarea>
                     </div>
                     <div className='d-flex justify-content-center'>
-                        {/* No SPAM */}
-                        <input type="text" name="_formsubmit_id" style={{ display: 'none' }} />
-                        {/* Fin no SPAM */}
                         <button type="submit" className="custom-button btn-primary my-3" disabled={isSubmitting}>
                             {isSubmitting ? "Enviando..." : "Enviar"}
                         </button>
                     </div>
+                        {/* No SPAM */}
+                        <input type="text" name="_formsubmit_id" style={{ display: 'none' }} />
+                        {/* Fin no SPAM */}
                 </form>
             </div>
             <ToastContainer />
