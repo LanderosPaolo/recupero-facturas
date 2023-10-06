@@ -114,9 +114,6 @@ const ContactForm = () => {
                     {/* Nueva plantilla para el correo */}
                     <input type="hidden" name="_template" value="table" />
                     {/* Fin nueva plantilla para el correo */}
-                    {/* No SPAM */}
-                    <input type="text" name="_formsubmit_id" style="display:none;" />
-                    {/* Fin no SPAM */}
                     <div className="form-group">
                         <label htmlFor="name" className="form-label">Nombre</label>
                         <input type="text" className="form-control" id="name" name="Nombre" placeholder="Nombre y Apellido" />
@@ -144,6 +141,9 @@ const ContactForm = () => {
                         <label htmlFor="message" className="form-label">Mensaje (Opcional)</label>
                         <textarea className="form-control" id="message" name="Mensaje" rows="4" placeholder="Mensaje"></textarea>
                     </div>
+                    {/* No SPAM */}
+                    <input type="text" name="_formsubmit_id" style="display:none;" />
+                    {/* Fin no SPAM */}
                     <div className='d-flex justify-content-center'>
                         <button type="submit" className="custom-button btn-primary my-3" disabled={isSubmitting}>
                             {isSubmitting ? "Enviando..." : "Enviar"}
