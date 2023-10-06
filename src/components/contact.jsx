@@ -141,10 +141,10 @@ const ContactForm = () => {
                         <label htmlFor="message" className="form-label">Mensaje (Opcional)</label>
                         <textarea className="form-control" id="message" name="Mensaje" rows="4" placeholder="Mensaje"></textarea>
                     </div>
-                    {/* No SPAM */}
-                    <input type="text" name="_formsubmit_id" style="display:none;" />
-                    {/* Fin no SPAM */}
                     <div className='d-flex justify-content-center'>
+                        {/* No SPAM */}
+                        <input type="text" name="_formsubmit_id" style={{ display: 'none' }} />
+                        {/* Fin no SPAM */}
                         <button type="submit" className="custom-button btn-primary my-3" disabled={isSubmitting}>
                             {isSubmitting ? "Enviando..." : "Enviar"}
                         </button>
