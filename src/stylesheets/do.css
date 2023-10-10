@@ -3,13 +3,6 @@
     justify-content: space-around;
 }
 
-.wrap h2 {
-    font-size: 2.5rem;
-    /* color: #000; */
-    color: #1e3b73;
-    /* color: #fff; */
-}
-
 .h2-container {
     width: 50%;
     margin-left: auto;
@@ -44,11 +37,9 @@
     perspective: 800px;
     width: 300px;
     height: 350px;
-    /* background-color: #e5e5e5; */
     background-color: rgba(30, 59, 115, 0.4);
     border-radius: 5%;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-    /* animation: autoRotate 5s linear infinite; */
 }
 
 .tarjeta {
