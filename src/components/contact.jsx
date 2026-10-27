@@ -55,10 +55,10 @@ const ContactForm = () => {
 
         setIsSubmitting(true);
 
-        const name = event.target.name.value;
-        const email = event.target.email.value;
-        const company = event.target.company.value;
-        const rut = event.target.rut.value;
+        const name = form.elements.namedItem("name").value.trim();
+        const email = form.elements.namedItem("email").value.trim();
+        const company = form.elements.namedItem("company").value.trim();
+        const rut = form.elements.namedItem("rut").value.trim();
 
         if (!name || !email || !company || !rut) {
             toast.error('¡Por favor, completa todos los campos!', {
