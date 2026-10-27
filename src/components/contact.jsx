@@ -18,12 +18,10 @@ const ContactForm = () => {
             return false;
         }
 
-        // Obtener el dígito verificador del RUT
-        const rutNumber = parseInt(rut.slice(0, -1), 10);
-        const rutDV = rut.slice(-1);
-
-        // Calcular el dígito verificador esperado
-        const rutDigits = rutNumber.toString().split('').reverse();
+        
+       const rutDV = rut.slice(-1);
+       const rutDigits = rut.slice(0, -1).split('').reverse();
+        
         let sum = 0;
         let multiplier = 2;
 
@@ -54,6 +52,8 @@ const ContactForm = () => {
         }
 
         setIsSubmitting(true);
+
+        const form = event.currentTarget;
 
         const name = form.elements.namedItem("name").value.trim();
         const email = form.elements.namedItem("email").value.trim();
