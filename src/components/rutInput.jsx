@@ -26,6 +26,7 @@ const RutInput = ({ value, onChange }) => {
             type="text"
             className="form-control"
             id="rut"
+            name="rut"
             value={value}
             onChange={handleChange}
             placeholder="Ingresa el RUT de la empresa"
